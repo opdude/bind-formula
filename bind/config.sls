@@ -49,7 +49,7 @@ bind_config:
     - require:
       - pkg: bind
     - watch_in:
-      - service: bind
+      - service: {{ map.service }}
 
 bind_local_config:
   file.managed:
